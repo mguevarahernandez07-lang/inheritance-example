@@ -1,11 +1,13 @@
 # Inheritance Example – C++ Bank Project
 
 This program demonstrates inheritance using three classes:
-- `bankAccount` (base class)
-- `checkingAccount` (child class)
-- `savingsAccount` (child class)
+
+- **bankAccount** (base class)
+- **checkingAccount** (child class)
+- **savingsAccount** (child class)
 
 The project lets the user:
+
 - Deposit money  
 - Withdraw money  
 - Check balances  
@@ -14,7 +16,7 @@ The project lets the user:
 
 ---
 
-## bankAccount.h
+## **bankAccount.h**
 ```cpp
 #pragma once
 #include <iostream>
@@ -53,7 +55,9 @@ public:
 };
 ```
 
-## bankAccount.cpp
+---
+
+## **bankAccount.cpp**
 ```cpp
 #include "bankAccount.h"
 
@@ -93,7 +97,9 @@ void bankAccount::print() const {
 }
 ```
 
-## checkingAccount.h
+---
+
+## **checkingAccount.h**
 ```cpp
 #pragma once
 #include "bankAccount.h"
@@ -142,7 +148,9 @@ public:
 };
 ```
 
-## checkingAccount.cpp
+---
+
+## **checkingAccount.cpp**
 ```cpp
 #include "checkingAccount.h"
 #include <iostream>
@@ -244,7 +252,9 @@ void checkingAccount::print() const {
 }
 ```
 
-## savingsAccount.h
+---
+
+## **savingsAccount.h**
 ```cpp
 #pragma once
 #include "bankAccount.h"
@@ -274,7 +284,9 @@ public:
 };
 ```
 
-## savingsAccount.cpp
+---
+
+## **savingsAccount.cpp**
 ```cpp
 #include "savingsAccount.h"
 #include <iostream>
@@ -323,7 +335,9 @@ void savingsAccount::print() const {
 }
 ```
 
-## main.cpp
+---
+
+## **main.cpp**
 ```cpp
 #include <iostream>
 #include "checkingAccount.h"
@@ -380,18 +394,13 @@ int main() {
 
 ---
 
-# How to Compile
-Use this command:
-
-```
+## **How to Compile**
+```bash
 g++ main.cpp bankAccount.cpp checkingAccount.cpp savingsAccount.cpp -o program
 ```
 
-Run the program:
-
-```
+## **How to Run**
+```bash
 ./program
 ```
-
----
 
